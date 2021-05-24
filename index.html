@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Test Minat dan Bakat Anak</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info" >
+      <a class="navbar-brand text-white" href="#">Tes Minat dan Bakat Anak</a>
+    </nav>
+
+    <div class="banak">
+
+      <div id="memulaites" class=" align-middle midt text-center">
+        <p style="color: #ffffff; font-size: 30px;"> Dengan tes bakat dan minat maka orang tua akan lebih mengetahui potensi diri anak dan  juga akan membantu siswa dapat lebih terarah dalam mengetahui minat yang sesuai dengan bakatnya.</p>
+        <button id="tombolMulai" type="button" class="btn btn-secondary btn-lg"
+          style="border-radius: 20px !important; border:none; background-color: #1E90FF">MULAI TES</button>
+      </div>
+
+      <div id="hasiltes" class=" align-middle midt text-center" style="display: none;">
+        <p style="color: #ffffff; font-size: 24px;"> Dengan semua pertanyaan yang telah dijawab, maka hasilnya anak anda memiliki bakat dan potensi pada bidang <span id="role"></span></p>
+        <p style="color: #ffffff; font-size: 20px;">Dukung dan terus tingkatkan kemampuan anak sehingga dapat memaksimalkan potensi dirinya. Selamat berjuang!<span id="role"></span></p>
+        <a type="button" class="btn btn-secondary btn-lg" href="bruh.html" 
+          style="border-radius: 20px !important; background-color: #1E90FF">KEMBALI</a>
+      </div>
+
+      <div class="tesmin" style="display: none;">
+        <form class="text-dark container">
+          <div class="card-body">
+            <div class="form-group">
+                <label class="pertanya" for=""><strong>1. Ketika memiliki waktu luang, apa yang biasa dilakukan oleh anak Anda ?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q1" id="q1">
+                  <label class="form-check-label">Biasanya anak saya akan menggambar/melukis sesuatu di kertas/tembok.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q1" id="q1">
+                  <label class="form-check-label">Biasanya anak saya akan memilih bermain mobil-mobilan/masak-masakkan bersama teman.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q1" id="q1">
+                  <label class="form-check-label">Biasanya anak saya akan memilih bermain bersama teman-temanya dan aktif bergerak.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q1" id="q1">
+                  <label class="form-check-label">Biasanya anak saya akan memilih membaca buku cerita / mendengarkan dongeng.</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>2. Ketika sedang belajar mana yang lebih disukai oleh anak Anda ?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q2" id="q2">
+                  <label class="form-check-label">Anak saya lebih menyukai berhitung/membaca.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q2" id="q2">
+                  <label class="form-check-label">Anak saya lebih menyukai belajar yang dilakukan dengan aktif bergerak.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q2" id="q2">
+                  <label class="form-check-label">Anak saya lebih menyukai belajar bersama-sama dengan teman-temannya.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q2" id="q2">
+                  <label class="form-check-label">Anak saya lebih menyukai mengambar /mewarnai/ membuat sesuatu yang tidak teduga dari bahan disekitar.</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>3. Ketika Anda dan anak Anda menghadiri sebuah acara, apa yang biasa Anak Anda lakukan ?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q3" id="q3">
+                  <label class="form-check-label">Anak saya akan lebih memperhatikan lingkungan sekitar dan menyukai sebuah keunikan yang baru dia lihat.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q3" id="q3">
+                  <label class="form-check-label">Anak saya akan lebih suka memperhatikan/mengamati jalannya acara.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q3" id="q3">
+                  <label class="form-check-label">Anak saya lebih suka mengajak berkomunikasi dengan teman seumuran walaupun baru saja kenal.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q3" id="q3">
+                  <label class="form-check-label">Anak saya akan bermain dan bergerak aktif dengan teman yang sudah dia kenal.</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>4. Ketika anda mengajak anak anda untuk jalan-jalan, ke tempat seperti apa yang lebih dia sukai?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q4" id="q4">
+                  <label class="form-check-label">lebih tertarik ketika diajak ke perpustakaan.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q4" id="q4">
+                  <label class="form-check-label">lebih tertarik ketika diajak ke taman.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q4" id="q4">
+                  <label class="form-check-label">lebih tertarik ketika diajak ke pameran seni.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q4" id="q4">
+                  <label class="form-check-label">lebih tertarik ketika diajak ke pusat perbelanjaan.</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>5.Bagaimana tipe anak Anda bermain?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q5" id="q5">
+                  <label class="form-check-label">Tipe senang berteman dengan semua orang.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q5" id="q5">
+                  <label class="form-check-label">Tipe mudah berteman dan  punya banyak teman.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q5" id="q5">
+                  <label class="form-check-label">Tipe tidak bisa diam/aktif dalam bergerak.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q5" id="q5">
+                  <label class="form-check-label">Tipe pilih-pilih dalam berteman atau tidak berteman pada semua orang.</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>6. Bagaimana anak Anda di keluarga ?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q6" id="q6">
+                  <label class="form-check-label">Anak yang suka mudah mengekspresikan diri di depan keluarga.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q6" id="q6">
+                  <label class="form-check-label">Anak yang sering melakukan komunikasi dengan keluarga/ aktif bercengkerama.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q6" id="q6">
+                  <label class="form-check-label">Anak yang mudah mengajak bermain bersama keluarga.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q6" id="q6">
+                  <label class="form-check-label">Anak yang sering bertanya dan suka berdiskusi.</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>7. Permainan apa yang lebih disukai atau sering dimainkan oleh anak Anda ?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q7" id="q7">
+                  <label class="form-check-label">Meragakan fasion show, peragaan drama, bernyanyi.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q7" id="q7">
+                  <label class="form-check-label">Sepak bola, voli, bulutangkis, berenang.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q7" id="q7">
+                  <label class="form-check-label">Petak umpet, Lompat Tali.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q7" id="q7">
+                  <label class="form-check-label">Memperagakan sebagai dokter, pilot, polisi, tentara, guru.</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for=""><strong>8. Barang apa yang lebih disukai atau sering digunakan oleh anak Anda ?</strong></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="A" name="q8" id="q8">
+                  <label class="form-check-label">Alat Musik, Alat Tari, Pewarna.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="B" name="q8" id="q8">
+                  <label class="form-check-label">Monopoli, Ular tangga.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="C" name="q8" id="q8">
+                  <label class="form-check-label">Bola (kasti, voli, sepak dll), Raket.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="D" name="q8" id="q8">
+                  <label class="form-check-label">Buku, Majalah.</label>
+                  </div>
+                </div>
+
+            
+
+            <div class="card-footer">
+              <button id="send" type="button" class="btn btn-info float-right"
+                style="border-radius: 20px !important;  padding: 20px; border: none;">KIRIM</button>
+              <button id="back" type="button" class="btn btn-info float-left"
+                style="border-radius: 20px !important;  padding: 20px; border: none;">KEMBALI</button>
+            </div>
+        </form>
+      </div>
+  </body>
+
+  <script>
+    $("#tombolMulai").click(function () {
+      $("#memulaites").fadeOut();
+      $(".tesmin").fadeIn();
+      $(".banak").css('background','transparent');
+    });
+    $("#back").click(function () {
+      $(".tesmin").fadeOut();
+      $("#memulaites").fadeIn();
+    });
+    $("#send").click(function () {
+      var prt1 = "";
+      var prt2 = "";
+      var prt3 = "";
+      var prt4 = "";
+      var prt5 = "";
+      var prt6 = "";
+      var prt7 = "";
+      var prt8 = "";
+
+      var prtt1 = document.getElementsByName('q1');
+      var prtt2 = document.getElementsByName('q2');
+      var prtt3 = document.getElementsByName('q3');
+      var prtt4 = document.getElementsByName('q4');
+      var prtt5 = document.getElementsByName('q5');
+      var prtt6 = document.getElementsByName('q6');
+      var prtt7 = document.getElementsByName('q7');
+      var prtt8 = document.getElementsByName('q8');
+      
+
+      for (var i = 0, length = prtt1.length; i < length; i++) {
+        if (prtt1[i].checked) {
+          prt1 = prtt1[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt2.length; i < length; i++) {
+        if (prtt2[i].checked) {
+          prt2 = prtt2[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt3.length; i < length; i++) {
+        if (prtt3[i].checked) {
+          prt3 = prtt3[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt4.length; i < length; i++) {
+        if (prtt4[i].checked) {
+          prt4 = prtt4[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt5.length; i < length; i++) {
+        if (prtt5[i].checked) {
+          prt5 = prtt5[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt6.length; i < length; i++) {
+        if (prtt6[i].checked) {
+          prt6 = prtt6[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt7.length; i < length; i++) {
+        if (prtt7[i].checked) {
+          prt7 = prtt7[i].value;
+          break;
+        }
+      }
+
+      for (var i = 0, length = prtt8.length; i < length; i++) {
+        if (prtt8[i].checked) {
+          prt8 = prtt8[i].value;
+          break;
+        }
+      }
+
+      if (prt1 == "" || prt2 == "" || prt3 == "" || prt4 == "" || prt5 == "" || prt6 == "" || prt7 == "" || prt8 == "" ) {
+      	alert("Anda belum menjawab semua pertanyaan!");
+      	return;
+      }
+      var seni = 0;
+      var sosial = 0;
+      var olahraga = 0;
+      var akademik = 0;
+
+      if (prt1 == "A") {
+        seni++;
+      } else if (prt1 == "B") {
+        sosial++;
+      } else if (prt1 == "C") {
+        olahraga++;
+      } else if (prt1 == "D") {
+        akademik++;
+      }
+
+      if (prt2 == "A") {
+        seni++;
+      } else if (prt2 == "B") {
+        sosial++;
+      } else if (prt2 == "C") {
+        olahraga++;
+      } else if (prt2 == "D") {
+        akademik++;
+      }
+
+      if (prt3 == "A") {
+        seni++;
+      } else if (prt3 == "B") {
+        sosial++;
+      } else if (prt3 == "C") {
+        olahraga++;
+      } else if (prt3 == "D") {
+        akademik++;
+      }
+
+      if (prt4 == "A") {
+        seni++;
+      } else if (prt4 == "B") {
+        sosial++;
+      } else if (prt4 == "C") {
+        olahraga++;
+      } else if (prt4 == "D") {
+        akademik++;
+      }
+
+      if (prt5 == "A") {
+        seni++;
+      } else if (prt5 == "B") {
+        sosial++;
+      } else if (prt5 == "C") {
+        olahraga++;
+      } else if (prt5 == "D") {
+        akademik++;
+      }
+
+      if (prt6 == "A") {
+        seni++;
+      } else if (prt6 == "B") {
+        sosial++;
+      } else if (prt6 == "C") {
+        olahraga++;
+      } else if (prt6 == "D") {
+        akademik++;
+      }
+
+      if (prt7 == "A") {
+        seni++;
+      } else if (prt7 == "B") {
+        sosial++;
+      } else if (prt7 == "C") {
+        olahraga++;
+      } else if (prt7 == "D") {
+        akademik++;
+      }
+
+      if (prt8 == "A") {
+        seni++;
+      } else if (prt8 == "B") {
+        sosial++;
+      } else if (prt8 == "C") {
+        olahraga++;
+      } else if (prt8 == "D") {
+        akademik++;
+      }
+ 
+ 
+
+      if (Math.max(seni,sosial,olahraga,akademik) == seni) {
+      	document.getElementById("role").innerHTML = "Seni. Anak anda memiliki bakat abstrak,relasi ruang(spasial), musik, lukis. Seseorang dengan bakat ini jika dikembangkan dengan baik dapat mengantar seseorang untuk menjadi pelukis, pemusik, fotografer dan lain-lainnya dibidang seni.  ";
+      }else if (Math.max(seni,sosial,olahraga,akademik) == sosial) {
+      	document.getElementById("role").innerHTML = "Sosial. Anak anda memiliki bakat relasi, verbal, lisguistik. Seseorang dengan bakat ini sangat baik dalam hal membaca puisi, debat, dan pidato serta cocok menjadi Master of Ceremony (MC) dan Penyiar radio.  ";
+      }else if (Math.max(seni,sosial,olahraga,akademik) == olahraga) {
+      	document.getElementById("role").innerHTML = "Olahraga. Anak anda memiliki kesehatan fisik dan mental yang baik dan cocok menjadi seorang atlit olahraga. ";
+      }else if (Math.max(seni,sosial,olahraga,akademik) == akademik) {
+      	document.getElementById("role").innerHTML = "Akademik. Anak anda memiliki bakat skolastik, verbal dan numerical. Seseorang dengan bakat ini jika dikembangkan dengan baik dapat mengantar seseorang untuk menjadi tenaga pengajar atau ilmuwan. ";
+      }
+      $(".tesmin").fadeOut();
+      $("#hasiltes").fadeIn();
+      $(".banak").css("background-image", "url(hasilanak.jpg)");
+
+    });
+  </script>
+
+</html>
